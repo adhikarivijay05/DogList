@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Es-mV-Bls">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DogProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2aR-ZM-kgu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemGray4Color"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ov8-Kv-d3B" customClass="DogListCell" customModule="DogProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="194.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ov8-Kv-d3B" id="Ior-2J-gq3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="194.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFX-JO-c5i">
+                                                    <rect key="frame" x="20" y="11" width="374" height="172.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZp-it-zBp">
+                                                            <rect key="frame" x="16" y="16" width="140" height="140"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="140" id="Arw-Sd-tBZ"/>
+                                                                <constraint firstAttribute="width" constant="140" id="Wzg-fk-reQ"/>
+                                                            </constraints>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B2K-Kn-Vsg">
+                                                            <rect key="frame" x="172" y="57" width="186" height="59"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="p3G-cI-G4W">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="24.5"/>
+                                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-jh-yqh">
+                                                                    <rect key="frame" x="0.0" y="34.5" width="186" height="24.5"/>
+                                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <constraints>
+                                                        <constraint firstItem="DZp-it-zBp" firstAttribute="leading" secondItem="bFX-JO-c5i" secondAttribute="leading" constant="16" id="1Ge-Kg-Oa3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="B2K-Kn-Vsg" secondAttribute="trailing" constant="16" id="Yje-jY-JdB"/>
+                                                        <constraint firstItem="B2K-Kn-Vsg" firstAttribute="centerY" secondItem="bFX-JO-c5i" secondAttribute="centerY" id="bsU-3e-zZ6"/>
+                                                        <constraint firstItem="DZp-it-zBp" firstAttribute="top" secondItem="bFX-JO-c5i" secondAttribute="top" constant="16" id="cP9-Fw-MZo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DZp-it-zBp" secondAttribute="bottom" priority="999" constant="16" id="dAe-hX-FSh"/>
+                                                        <constraint firstItem="B2K-Kn-Vsg" firstAttribute="leading" secondItem="DZp-it-zBp" secondAttribute="trailing" constant="16" id="jID-cT-3sA"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bFX-JO-c5i" firstAttribute="top" secondItem="Ior-2J-gq3" secondAttribute="topMargin" id="2UD-Yh-Of9"/>
+                                                <constraint firstItem="bFX-JO-c5i" firstAttribute="leading" secondItem="Ior-2J-gq3" secondAttribute="leadingMargin" id="5q6-1C-dsF"/>
+                                                <constraint firstItem="bFX-JO-c5i" firstAttribute="bottom" secondItem="Ior-2J-gq3" secondAttribute="bottomMargin" id="gEB-wh-LaS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bFX-JO-c5i" secondAttribute="trailing" id="pPc-pa-Al0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <connections>
+                                            <outlet property="dogImage" destination="DZp-it-zBp" id="22U-Fk-00U"/>
+                                            <outlet property="dogNameLbl" destination="p3G-cI-G4W" id="FF5-j2-x3R"/>
+                                            <outlet property="lifeSpanLbl" destination="aoE-jh-yqh" id="cyh-Jt-Sf5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Ug-UF-eus"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="r5A-IL-BeK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2aR-ZM-kgu" secondAttribute="bottom" id="NLZ-L8-MY9"/>
+                            <constraint firstItem="2aR-ZM-kgu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aEv-aj-Idv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2aR-ZM-kgu" secondAttribute="trailing" id="bpF-jw-rm3"/>
+                            <constraint firstItem="2aR-ZM-kgu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wxu-tk-ROx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oNF-ff-XlH">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="epk-hT-IAC">
+                            <rect key="frame" x="114.5" y="5.5" width="185" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Ascending"/>
+                                <segment title="Descending"/>
+                            </segments>
+                            <connections>
+                                <action selector="changeOrder:" destination="BYZ-38-t0r" eventType="valueChanged" id="vIq-Fa-Rin"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="JgI-19-hQT">
+                            <connections>
+                                <action selector="refreshDogList:" destination="BYZ-38-t0r" id="RoE-vJ-Jw3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dogTableView" destination="2aR-ZM-kgu" id="VGC-ZT-fg9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hKi-pc-lhW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Es-mV-Bls" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eFu-La-SLG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lrp-UK-Pao"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kac-bP-Xgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
